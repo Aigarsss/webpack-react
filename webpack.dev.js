@@ -8,5 +8,9 @@ module.exports = merge(common, {
         path: path.join(__dirname, '/dist'),
         filename: 'index.js',
         assetModuleFilename: 'static/[hash][ext][query]'
+    },
+    devServer: {
+        contentBase: "./dist",
+        hot: true,
     }
 })
